@@ -1,6 +1,9 @@
 package api
 
-import "github.com/gofiber/fiber/v2"
+import (
+	"github.com/eunice99x/jwt-gofiber/services"
+	"github.com/gofiber/fiber/v2"
+)
 
 func NewApi(s services.Services) *fiber.App {
 	api := fiber.New()

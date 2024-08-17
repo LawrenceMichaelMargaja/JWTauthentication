@@ -20,7 +20,7 @@ func NewService(db *gorm.DB) Services {
 	}
 }
 
-func (s *services) GetProduct() *models.Report {
+func (s *services) GetProduct() *models.Product {
 	readProduct := &models.Product{}
 	s.db.First(&readProduct, "code = ?", "D42")
 	return readProduct
